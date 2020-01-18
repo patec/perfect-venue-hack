@@ -8,7 +8,6 @@ class Analytics2 extends React.Component {
       <React.Fragment>
         <Chart
           chartType="ColumnChart"
-          // spreadSheetUrl="https://docs.google.com/spreadsheets/d/1SfB6GHs4GtBwEZdA4pMzxEo91GunpmnMeoysRfoHzb0"
           spreadSheetUrl={this.props.dataUrl}
           spreadSheetQueryParameters={{
             headers: 1,
@@ -16,21 +15,18 @@ class Analytics2 extends React.Component {
           }}
           width="700px"
           height="300px"
-          style={{ margin: 'auto', padding: '20px' }}
-          title="Revenue"
-          // options={{
-          //   vAxis: { format: 'long' }
-          // }}
-          // spreadSheetUrl="https://docs.google.com/spreadsheets/d/1XWJLkAwch5GXAt_7zOFDcg8Wm8Xv29_8PWuuW15qmAE"
-          // spreadSheetQueryParameters={{
-          //   headers: 1,
-          //   query: 'SELECT A, H, O, Q, R, U LIMIT 5 OFFSET 8'
-          // }}
+          style={{ margin: 'auto', marginBottom: '30px' }}
           options={{
             title: this.props.title,
-            legend: 'top',
+            titlePosition: 'out',
+            titleTextStyle: {
+              color: 'grey'
+            },
+            legend: { position: 'top', alignment: 'center' },
             hAxis: {
-              format: 'short'
+              type: 'string',
+              format: 'string',
+              slantedText: 'true'
             },
             vAxis: {
               format: this.props.type
