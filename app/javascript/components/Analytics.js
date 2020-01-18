@@ -50,12 +50,19 @@ class Analytics extends React.Component {
 
     return (
       <React.Fragment>
+        <h3 style={{ marginLeft: '-600px', textAlign: 'center' }}>
+          Performance
+        </h3>
         <div
           style={{
             width: '400px',
-            height: '300px'
+            height: '300px',
+            margin: 'auto',
+            padding: '25px',
+            backgroundColor: 'white'
           }}
         >
+          <p style={{ marginBottom: '10px', marginTop: '0px' }}>Revenue</p>
           <Chart series={series} data={data} axes={axes} />
         </div>
       </React.Fragment>
