@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a sample rails app to graph charts from data in Google Sheets using react for the frontend.
 
-Things you may want to cover:
+To get started :
 
-* Ruby version
+- Install gems and node modules
+  - `bundle install`
+  - `yarn`
+- Run: `rails s` to start up locally (defaults is port 3000)
+  - [localhost:3000](localhost:3000)
 
-* System dependencies
+## Versions
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Ruby 2.5.1
+- Node 12.3.1
